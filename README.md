@@ -43,8 +43,31 @@ export DST_UPDATER__LOG__DIR=/path/to/logs
 ## 使用方式
 
 
+### 单次运行
 ```
 cargo run
+```
+
+### 定时运行
+
+编译项目
+```
+cargo build --release
+```
+
+在`target/release`目录下生成的可执行文件为`dst-server-updater`。
+
+#### 配置定时任务
+
+根据操作系统不同，配置不同的定时任务。以下为 Linux 示例：
+
+```bash
+crontab -e
+```
+
+在编辑器中添加以下行，每小时执行一次：
+```
+0 * * * * /path/to/dst-server-updater
 ```
 
 

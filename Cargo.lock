@@ -365,6 +365,7 @@ dependencies = [
 [[package]]
 name = "dst-update"
 version = "0.1.0"
+source = "git+https://github.com/AshBarks/dst-update.git#3a79375ff748a4efb871252d185ae3e2239947f7"
 dependencies = [
  "chrono",
  "clap",

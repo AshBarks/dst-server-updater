@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-dst-update = {path = "../dst-update"}
+dst-update = {git = "https://github.com/AshBarks/dst-update.git"}
 log = "0.4"
 env_logger = "0.11"
 chrono = "0.4"
